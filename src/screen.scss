@@ -1,0 +1,150 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+@import "all.min";
+@import "compass/css3/gradient";
+
+$text: #FFDD68;
+$accent: #c42817;
+
+@mixin background_gradient($top, $bottom) {
+  background: $bottom;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from($top), to($bottom));
+  background: -moz-linear-gradient($top, $bottom);
+  background: linear-gradient($top, $bottom);
+}
+
+.myPage{
+  width: 760px
+}
+
+.title {
+  color: $accent; 
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: $accent;
+  text-transform: uppercase;
+  font-size: 140%;
+}
+
+
+h1, .h1{
+  color: $text;
+  text-transform: uppercase;
+}
+
+h2, .h2{
+  color: $text;
+  //text-transform: uppercase;
+  font-size: 150%;
+}
+
+.section_h2{
+  color: white;
+  text-transform: uppercase;
+  font-size: 120%;
+}
+
+h3, .h3{
+
+}
+
+h4, .h4{
+}
+
+h5, .h5{
+}
+
+h6, .h6{
+}
+
+body, p{
+  font-size: 13px;
+}
+
+.myLeft {
+  background-color: blue;
+};
+
+.modLogo {
+  margin-top: 0px;
+
+}
+
+.modHeader{
+  //background-color: red;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+
+.modMain{
+  background-color: $accent; 
+}
+
+
+.modFact{
+  background-color: gray;
+  color: $text;
+  .inner > .hd {
+    background-color: black;
+    color: white;
+  }
+  .inner > .bd{
+    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
+    background-color: gray;
+  }
+}
+
+.modAction{
+  color: $text;
+  .inner > .hd {
+    background-color: black;
+    color: white;
+  } 
+  .inner > .bd{
+    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
+    background-color: gray;
+  }
+}
+
+
+
+.modChoices{
+  color: $text;
+  .inner > .hd {
+    background-color: black;
+    color: white;
+  } 
+  .inner > .bd{
+    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
+    //background-color: gray;
+  }
+}
+
+
+.modChoice{
+  color: $text;
+  .inner > .hd {
+    background-color: black;
+    color: white;
+  } 
+  .inner > .bd{
+    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
+    background-color: gray;
+    text-align: center;
+  }
+}
+
+.leftChoice{
+  margin-left: 0px;
+}
+
+.rightChoice{
+  margin-right: 0px;
+}
