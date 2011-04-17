@@ -20,10 +20,13 @@ $accent: #c42817;
 
 .hide{
   display: none;
+<<<<<<< HEAD
 }
 
 .question{
   display: none;
+=======
+>>>>>>> ca259d6770762d0fed9cb80f2eb0e1f6df0df8d6
 }
 
 .feedback{
@@ -131,15 +134,15 @@ textarea{
 
 
 .modBase{
-  background-color: gray;
+  // background-color: gray;
   color: $text;
   .inner > .hd {
-    background-color: black;
+    background-color: #1d211c;
     color: white;
   };
   .inner > .bd{
-    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
-    background-color: gray;
+    // @include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
+     background-color: #1d211c;
   }
 }
 
@@ -150,21 +153,37 @@ textarea{
 
 
 .modMain{
-  background-color: $accent; 
+  background-color: #000000; 
+}
+
+
+.modSceneario{
+
+ padding:0px;
+
 }
 
 
 .modFact{
+
+ margin: 0px 0px 10px 0px;
+ 
 }
 
 .modAction{
+
+   margin: 0px 0px 10px 0px;
+
+
 }
 
 
 
 .modChoices{
+
+   margin: 0px 0px 10px 0px;
   >.inner >.bd {
-    background-color: $accent; 
+    background-color: #000000; 
   }
 }
 
