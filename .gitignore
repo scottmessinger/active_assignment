@@ -1,3 +1,5 @@
-*.swp
-*.gitignore
+<<<<<<< HEAD
 .sass-cache/*/*
+=======
+.sass-cache/*/*
+>>>>>>> ca259d6770762d0fed9cb80f2eb0e1f6df0df8d6
