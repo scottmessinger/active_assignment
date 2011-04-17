@@ -34,7 +34,6 @@
         $(".proceed").click(function(){
           scenario = $(this).parents(".scenario")
           next_scenario = scenario.next(".scenario")
-          console.log(next_scenario)
           scenario.fadeOut()
           next_scenario.fadeIn()
         })
@@ -145,12 +144,16 @@
                               <div class="mod modFactAction">
                                 <div class="inner">
                                   <div class="bd">
+                                <div class="mod fact">
+                                	<div class="inner">
+                                    <div class="bd">
                                     <h2>The British are coming</h2>
                                     <p>The British King has raised your taxes on tea! Now, everytime you want tea, </p>
                                     <p>it will cost you a dollar more.</p>
                                   </div>
                               	</div>
                               </div>
+                                    
 
                               <div class="mod modAction modBase">
                               	<div class="inner">
@@ -206,6 +209,9 @@
                             </div>
                           </div>
                         </div>
+                                    </div>
+                                	</div>
+                                </div>
 
                         <!--THIS IS THE OUTCOME SECTION -->
                         <div class="mod modBase modOutcome hide" id="answerTea_show">
