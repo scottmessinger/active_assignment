@@ -2043,17 +2043,16 @@ body, p {
 
 /* line 108, ../src/screen.scss */
 .modBase {
-  background-color: gray;
   color: #ffdd68;
 }
 /* line 111, ../src/screen.scss */
 .modBase .inner > .hd {
-  background-color: black;
+  background-color: #1d211c;
   color: white;
 }
 /* line 115, ../src/screen.scss */
 .modBase .inner > .bd {
-  background-color: gray;
+  background-color: #1d211c;
 }
 
 /* line 121, ../src/screen.scss */
@@ -2064,25 +2063,44 @@ body, p {
 
 /* line 127, ../src/screen.scss */
 .modMain {
-  background-color: #c42817;
+  background-color: #000000;
 }
 
-/* line 141, ../src/screen.scss */
+/* line 132, ../src/screen.scss */
+.modSceneario {
+  padding: 0px;
+}
+
+/* line 139, ../src/screen.scss */
+.modFact {
+  margin: 0px 0px 10px 0px;
+}
+
+/* line 145, ../src/screen.scss */
+.modAction {
+  margin: 0px 0px 10px 0px;
+}
+
+/* line 154, ../src/screen.scss */
+.modChoices {
+  margin: 0px 0px 10px 0px;
+}
+/* line 157, ../src/screen.scss */
 .modChoices > .inner > .bd {
-  background-color: #c42817;
+  background-color: #000000;
 }
 
-/* line 147, ../src/screen.scss */
+/* line 163, ../src/screen.scss */
 .modChoice {
   cursor: pointer;
 }
 
-/* line 153, ../src/screen.scss */
+/* line 169, ../src/screen.scss */
 .leftChoice {
   margin-left: 0px;
 }
 
-/* line 157, ../src/screen.scss */
+/* line 173, ../src/screen.scss */
 .rightChoice {
   margin-right: 0px;
 }
