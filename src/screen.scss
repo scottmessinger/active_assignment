@@ -106,16 +106,27 @@ body, p{
 
 
 .modBase{
+   background:url(../temp-images/background-fact.jpg);
   // background-color: gray;
   color: $text;
+  
   .inner > .hd {
-    background-color: #1d211c;
-    color: white;
+   //background-color: #1d211c;
+   color: white;
   };
   .inner > .bd{
     // @include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
-     background-color: #1d211c;
+     //background-color: #1d211c;
+     
   }
+
+}
+
+
+.modOutcome{
+ 
+  background:url(../temp-images/background-outcomes.jpg);
+
 }
 
 .modHeader{
@@ -139,7 +150,8 @@ body, p{
 .modFact{
 
  margin: 0px 0px 10px 0px;
- background:url(temp-images/background-fact.jpg);
+
+ 
  
 }
 
@@ -163,6 +175,7 @@ body, p{
 
 .modChoice{
   cursor: pointer;
+  border: 1px solid #565555;
 }
 
 
@@ -174,3 +187,8 @@ body, p{
 .rightChoice{
   margin-right: 0px;
 }
+
+
+
+
+

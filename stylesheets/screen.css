@@ -2038,64 +2038,66 @@ body, p {
 
 /* line 108, ../src/screen.scss */
 .modBase {
+  background: url(../temp-images/background-fact.jpg);
   color: #ffdd68;
 }
-/* line 111, ../src/screen.scss */
+/* line 113, ../src/screen.scss */
 .modBase .inner > .hd {
-  background-color: #1d211c;
   color: white;
 }
-/* line 115, ../src/screen.scss */
-.modBase .inner > .bd {
-  background-color: #1d211c;
+
+/* line 126, ../src/screen.scss */
+.modOutcome {
+  background: url(../temp-images/background-outcomes.jpg);
 }
 
-/* line 121, ../src/screen.scss */
+/* line 132, ../src/screen.scss */
 .modHeader {
   margin-top: 0px;
   margin-left: 0px;
 }
 
-/* line 127, ../src/screen.scss */
+/* line 138, ../src/screen.scss */
 .modMain {
   background-color: #000000;
 }
 
-/* line 132, ../src/screen.scss */
+/* line 143, ../src/screen.scss */
 .modSceneario {
   padding: 0px;
 }
 
-/* line 139, ../src/screen.scss */
+/* line 150, ../src/screen.scss */
 .modFact {
   margin: 0px 0px 10px 0px;
 }
 
-/* line 145, ../src/screen.scss */
+/* line 158, ../src/screen.scss */
 .modAction {
   margin: 0px 0px 10px 0px;
 }
 
-/* line 154, ../src/screen.scss */
+/* line 167, ../src/screen.scss */
 .modChoices {
   margin: 0px 0px 10px 0px;
 }
-/* line 157, ../src/screen.scss */
+/* line 170, ../src/screen.scss */
 .modChoices > .inner > .bd {
   background-color: #000000;
 }
 
-/* line 163, ../src/screen.scss */
+/* line 176, ../src/screen.scss */
 .modChoice {
   cursor: pointer;
+  border: 1px solid #565555;
 }
 
-/* line 169, ../src/screen.scss */
+/* line 183, ../src/screen.scss */
 .leftChoice {
   margin-left: 0px;
 }
 
-/* line 173, ../src/screen.scss */
+/* line 187, ../src/screen.scss */
 .rightChoice {
   margin-right: 0px;
 }
