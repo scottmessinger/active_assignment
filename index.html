@@ -29,13 +29,12 @@
             <!--$(this).parents(".question").siblings(".feedback:first").fadeIn()-->
             $(this).next("li").fadeIn()
             })
-      })
 
       $(".proceed").click(function(){
           scenario = $(this).parents(".scenario")
           next_scenario = scenario.next(".scenario")
-          scenario.fadeOut()
-          next_scenario.fadeIn()
+          scenario.slideUp()
+          next_scenario.slideDown()
           })
 
       })
@@ -273,6 +272,13 @@
                                   </div><!--bd-->
                               </div><!--inner-->
                           </div><!--scenario-->
+                          <div class="mod modScenario hide scenario">
+                              <div class="inner">
+                                  <div class="bd">
+                                      <h1> HI!</h1>
+                                  </div>
+                              </div>
+                          </div>
 
 
 
