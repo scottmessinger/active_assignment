@@ -17,6 +17,15 @@ $accent: #c42817;
   background: linear-gradient($top, $bottom);
 }
 
+
+.hide{
+  display: none;
+}
+
+.feedback{
+  display: none;
+}
+
 .myPage{
   width: 760px
 }
@@ -51,7 +60,7 @@ h2, .h2{
 }
 
 h3, .h3{
-
+  color: $text;
 }
 
 h4, .h4{
@@ -73,11 +82,43 @@ body, p{
 
 .modLogo {
   margin-top: 0px;
+}
 
+
+.answer{
+  font-size: 15px;
+  padding: 3px 5px;
+  &:hover {
+    background-color: black;
+  }
+}
+
+.feedback{
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: brown;
+  font-size: 150%;
+}
+.correct{
+  background-color: green;
+}
+
+
+.modBase{
+  background-color: gray;
+  color: $text;
+  .inner > .hd {
+    background-color: black;
+    color: white;
+  };
+  .inner > .bd{
+    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
+    background-color: gray;
+  }
 }
 
 .modHeader{
-  //background-color: red;
   margin-top: 0px;
   margin-left: 0px;
 }
@@ -89,57 +130,25 @@ body, p{
 
 
 .modFact{
-  background-color: gray;
-  color: $text;
-  .inner > .hd {
-    background-color: black;
-    color: white;
-  }
-  .inner > .bd{
-    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
-    background-color: gray;
-  }
 }
 
 .modAction{
-  color: $text;
-  .inner > .hd {
-    background-color: black;
-    color: white;
-  } 
-  .inner > .bd{
-    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
-    background-color: gray;
-  }
 }
 
 
 
 .modChoices{
-  color: $text;
-  .inner > .hd {
-    background-color: black;
-    color: white;
-  } 
-  .inner > .bd{
-    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
-    //background-color: gray;
+  >.inner >.bd {
+    background-color: $accent; 
   }
 }
 
 
 .modChoice{
-  color: $text;
-  .inner > .hd {
-    background-color: black;
-    color: white;
-  } 
-  .inner > .bd{
-    //@include linear-gradient(color-stops(#202c20, #6b6a59, #202c20));
-    background-color: gray;
-    text-align: center;
-  }
+  cursor: pointer;
 }
+
+
 
 .leftChoice{
   margin-left: 0px;

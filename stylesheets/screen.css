@@ -1950,129 +1950,139 @@ TODO: clean up selector structure - too much variation in rule strength
 }
 
 /* plugins */
-/* line 20, ../src/screen.scss */
+/* line 21, ../src/screen.scss */
+.hide {
+  display: none;
+}
+
+/* line 25, ../src/screen.scss */
+.feedback {
+  display: none;
+}
+
+/* line 29, ../src/screen.scss */
 .myPage {
   width: 760px;
 }
 
-/* line 24, ../src/screen.scss */
+/* line 33, ../src/screen.scss */
 .title {
   color: #c42817;
   text-transform: uppercase;
 }
 
-/* line 29, ../src/screen.scss */
+/* line 38, ../src/screen.scss */
 .subtitle {
   color: #c42817;
   text-transform: uppercase;
   font-size: 140%;
 }
 
-/* line 36, ../src/screen.scss */
+/* line 45, ../src/screen.scss */
 h1, .h1 {
   color: #ffdd68;
   text-transform: uppercase;
 }
 
-/* line 41, ../src/screen.scss */
+/* line 50, ../src/screen.scss */
 h2, .h2 {
   color: #ffdd68;
   font-size: 150%;
 }
 
-/* line 47, ../src/screen.scss */
+/* line 56, ../src/screen.scss */
 .section_h2 {
   color: white;
   text-transform: uppercase;
   font-size: 120%;
 }
 
-/* line 66, ../src/screen.scss */
+/* line 62, ../src/screen.scss */
+h3, .h3 {
+  color: #ffdd68;
+}
+
+/* line 75, ../src/screen.scss */
 body, p {
   font-size: 13px;
 }
 
-/* line 70, ../src/screen.scss */
+/* line 79, ../src/screen.scss */
 .myLeft {
   background-color: blue;
 }
 
-/* line 74, ../src/screen.scss */
+/* line 83, ../src/screen.scss */
 .modLogo {
   margin-top: 0px;
 }
 
-/* line 79, ../src/screen.scss */
+/* line 88, ../src/screen.scss */
+.answer {
+  font-size: 15px;
+  padding: 3px 5px;
+}
+/* line 91, ../src/screen.scss */
+.answer:hover {
+  background-color: black;
+}
+
+/* line 96, ../src/screen.scss */
+.feedback {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: brown;
+  font-size: 150%;
+}
+
+/* line 103, ../src/screen.scss */
+.correct {
+  background-color: green;
+}
+
+/* line 108, ../src/screen.scss */
+.modBase {
+  background-color: gray;
+  color: #ffdd68;
+}
+/* line 111, ../src/screen.scss */
+.modBase .inner > .hd {
+  background-color: black;
+  color: white;
+}
+/* line 115, ../src/screen.scss */
+.modBase .inner > .bd {
+  background-color: gray;
+}
+
+/* line 121, ../src/screen.scss */
 .modHeader {
   margin-top: 0px;
   margin-left: 0px;
 }
 
-/* line 86, ../src/screen.scss */
+/* line 127, ../src/screen.scss */
 .modMain {
   background-color: #c42817;
 }
 
-/* line 91, ../src/screen.scss */
-.modFact {
-  background-color: gray;
-  color: #ffdd68;
-}
-/* line 94, ../src/screen.scss */
-.modFact .inner > .hd {
-  background-color: black;
-  color: white;
-}
-/* line 98, ../src/screen.scss */
-.modFact .inner > .bd {
-  background-color: gray;
+/* line 141, ../src/screen.scss */
+.modChoices > .inner > .bd {
+  background-color: #c42817;
 }
 
-/* line 104, ../src/screen.scss */
-.modAction {
-  color: #ffdd68;
-}
-/* line 106, ../src/screen.scss */
-.modAction .inner > .hd {
-  background-color: black;
-  color: white;
-}
-/* line 110, ../src/screen.scss */
-.modAction .inner > .bd {
-  background-color: gray;
-}
-
-/* line 118, ../src/screen.scss */
-.modChoices {
-  color: #ffdd68;
-}
-/* line 120, ../src/screen.scss */
-.modChoices .inner > .hd {
-  background-color: black;
-  color: white;
-}
-
-/* line 131, ../src/screen.scss */
+/* line 147, ../src/screen.scss */
 .modChoice {
-  color: #ffdd68;
-}
-/* line 133, ../src/screen.scss */
-.modChoice .inner > .hd {
-  background-color: black;
-  color: white;
-}
-/* line 137, ../src/screen.scss */
-.modChoice .inner > .bd {
-  background-color: gray;
-  text-align: center;
+  cursor: pointer;
 }
 
-/* line 144, ../src/screen.scss */
+/* line 153, ../src/screen.scss */
 .leftChoice {
   margin-left: 0px;
 }
 
-/* line 148, ../src/screen.scss */
+/* line 157, ../src/screen.scss */
 .rightChoice {
   margin-right: 0px;
 }
