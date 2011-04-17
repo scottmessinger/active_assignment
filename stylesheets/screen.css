@@ -1965,7 +1965,16 @@ TODO: clean up selector structure - too much variation in rule strength
   display: none;
 }
 
+<<<<<<< HEAD
 /* line 37, ../src/screen.scss */
+=======
+/* line 29, ../src/screen.scss */
+.myPage {
+  width: 760px;
+}
+
+/* line 33, ../src/screen.scss */
+>>>>>>> e21e411... testing
 .title {
   color: #c42817;
   text-transform: uppercase;
