@@ -9,37 +9,37 @@
     <script type="text/javascript">
       $(function(){
 
-        $(".button").click(function(){
-           var div = $(this).attr('id') + "_show"
-           $(this).parents(".modFactAction").slideUp()
-           $("#"+div).slideDown(function(){
-             $("#"+div).find(".question:first").slideDown()
-           })
-         })
-         
-        $(".next_question").click(function(){
-          var _this = $(this)
-          $(this).parents(".question").fadeOut(function(){
-            <!--console.log( $(this).parents)-->
-            _this.parents(".question").next(".question").fadeIn()
-          })
-        })
+          $(".button").click(function(){
+            var div = $(this).attr('id') + "_show"
+            $(this).parents(".modFactAction").slideUp()
+            $("#"+div).slideDown(function(){
+              $("#"+div).find(".question:first").slideDown()
+              })
+            })
 
-        $(".answer").click(function(){
-          <!--$(this).parents(".question").siblings(".feedback:first").fadeIn()-->
-          $(this).next("li").fadeIn()
-          })
-        })
+          $(".next_question").click(function(){
+            var _this = $(this)
+            $(this).parents(".question").fadeOut(function(){
+              <!--console.log( $(this).parents)-->
+              _this.parents(".question").next(".question").fadeIn()
+              })
+            })
 
-        $(".proceed").click(function(){
+          $(".answer").click(function(){
+            <!--$(this).parents(".question").siblings(".feedback:first").fadeIn()-->
+            $(this).next("li").fadeIn()
+            })
+      })
+
+      $(".proceed").click(function(){
           scenario = $(this).parents(".scenario")
           next_scenario = scenario.next(".scenario")
           scenario.fadeOut()
           next_scenario.fadeIn()
-        })
+          })
 
-    })
-    </script>
+      })
+      </script>
 
     <div class="page myPage">
 
@@ -49,17 +49,17 @@
 
           <div class="unit size1of5">
             <div class="mod modLogo">
-            	<div class="inner">
+              <div class="inner">
                 <div class="bd">
                   <img src="temp-images/logo.jpg"/>
                 </div>
-            	</div>
+              </div>
             </div>
           </div>
 
           <div class="unit size4of5">
             <div class="mod modHeader">
-            	<div class="inner">
+              <div class="inner">
                 <div class="hd">
                 </div>
                 <div class="bd">
@@ -71,7 +71,7 @@
                   </h1>
                   <img src="temp-images/token-board.jpg">
                 </div>
-            	</div>
+              </div>
             </div>
           </div>
         </div> 
@@ -85,7 +85,7 @@
                 <div class="inner">
                   <div class="hd"></div>
                   <div class="bd">
-                   <img src="temp-images/nav-book.jpg"/>
+                    <img src="temp-images/nav-book.jpg"/>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@
                 <div class="inner">
                   <div class="hd"></div>
                   <div class="bd">
-                   <img src="temp-images/nav-hint.jpg"/>
+                    <img src="temp-images/nav-hint.jpg"/>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@
                 <div class="inner">
                   <div class="hd"></div>
                   <div class="bd">
-                   <img src="temp-images/nav-peer.jpg"/> 
+                    <img src="temp-images/nav-peer.jpg"/> 
                   </div>
                 </div>
               </div>
@@ -109,155 +109,185 @@
                 <div class="inner">
                   <div class="hd"></div>
                   <div class="bd">
-                   <img src="temp-images/nav-ask-teacher.jpg"/> 
+                    <img src="temp-images/nav-ask-teacher.jpg"/> 
                   </div>
                 </div>
               </div>
             </div> <!-- unit -->
-            
-            <div class="unit size4of5">
 
-              
+            <div class="unit size4of5">
 
               <div class="mod modMain">
                 <div class="inner">
-                  <div class="hd">
-                  </div>
+                  <div class="hd"> </div>
                   <div class="bd">
+
                     <div class="line">
-                      
+
+                      <!--* * * * * * * * * * * * * * * * * * * *-->
+                      <!--This is the pic for main screen-->
+                      <!--* * * * * * * * * * * * * * * * * * * *-->
+
+
                       <div class="unit size1of3">
+
                         <div class="mod modSideGraphic">
-                        	<div class="inner">
+                          <div class="inner">
                             <div class="bd">
                               <img src="temp-images/profile.jpg"/>
                             </div>
-                        	</div>
+                          </div>
                         </div>
                       </div>
+
+                      <!--* * * * * * * * * * * * * * * * * * * *-->
+                      <!--This is the scenario graphic-->
+                      <!--* * * * * * * * * * * * * * * * * * * *-->
+
                       <div class="div unit size2of3">
 
-                        <!--THE FIRST PAGE OF THE SCENARIO-->
 
-                        <div class="mod modScenario scenario">
-                          <div class="inner">
-                            <div class="bd">
-                              <div class="mod modFactAction">
-                                <div class="inner">
-                                  <div class="bd">
-                                <div class="mod fact">
-                                	<div class="inner">
-                                    <div class="bd">
-                                    <h2>The British are coming</h2>
-                                    <p>The British King has raised your taxes on tea! Now, everytime you want tea, </p>
-                                    <p>it will cost you a dollar more.</p>
-                                  </div>
-                              	</div>
-                              </div>
-                                    
-
-                              <div class="mod modAction modBase">
-                              	<div class="inner">
-                                  <div class="hd">
-                                    <h2 class="section_h2">Action</h2>                                  
-                                  </div>
-                                  <div class="bd">
-                                    <h2>You must act</h2>
-                                    <p>Do you want to continue buying tea or purchase coffee instead?</p>
-                                    <p>Cofee will cost yonly 20 cents adn it does not have a tax.</p>
-                                  </div>
-                              	</div>
-                              </div>
-
-                              <div class="mod modBase modChoices">
-                              	<div class="inner">
-                                  <div class="hd">
-                                    <h2 class="section_h2">Choices</h2>                                  
-                                  </div>
+                          <div class="mod modScenario scenario">
+                              <div class="inner">
                                   <div class="bd">
 
-                                    <div class="line">
-                                      <div class="unit size1of2">
-
-                                        <div class="mod modChoice modBase leftChoice">
+                                      <div class="mod modFactAction">
                                           <div class="inner">
-                                            <div class="hd"></div>
-                                            <div class="bd button" id="answerTea">
-                                              <p>Purchase Tea</p>
-                                            </div>
-                                          </div>
-                                        </div>
+                                              <div class="bd">
+
+                                                  <div class="mod modBase modFact fact">
+                                                      <div class="inner">
+                                                          <div class="hd">
+                                                          <h2 class="section_h2">Fact</h2>
+                                                          </div>
+                                                          <div class="bd">
+                                                              <h2>The British are coming</h2>
+                                                              <p>The British King has raised your taxes on tea! Now, everytime you want tea, </p>
+                                                              <p>it will cost you a dollar more.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
 
 
-                                      </div>
-                                      <div class="unit size1of2">
-                                        <div class="mod modChoice modBase rightChoice">
+                                                  <div class="mod modAction modBase"> 
+                                                      <div class="inner"> 
+                                                          <div class="hd"> 
+                                                              <h2 class="section_h2">Action</h2>                                  
+                                                          </div>
+                                                          <div class="bd"> 
+                                                              <h2>You must act</h2> 
+                                                              <p>Do you want to continue buying tea or purchase coffee instead?</p> 
+                                                              <p>Cofee will cost yonly 20 cents adn it does not have a tax.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="mod modBase modChoices">
+                                                      <div class="inner">
+                                                          <div class="hd">
+                                                              <h2 class="section_h2">Choices</h2>                                  
+                                                          </div>
+                                                          <div class="bd">
+
+                                                              <div class="line">
+                                                                  <div class="unit size1of2">
+                                                                      <div class="mod modChoice modBase leftChoice">
+                                                                          <div class="inner">
+                                                                              <div class="hd"></div>
+                                                                              <div class="bd button" id="answerTea">
+                                                                                  <p>Purchase Tea</p>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+
+                                                                  <div class="unit size1of2">
+                                                                      <div class="mod modChoice modBase rightChoice">
+                                                                          <div class="inner">
+                                                                              <div class="hd"></div>
+                                                                              <div class="bd">
+                                                                                  <p>Purchase Coffee</p>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div> <!-- line --> 
+                                                          </div><!-- bd-->
+                                                      </div><!--inner-->
+                                                  </div><!-- modchoices-->
+                                              </div><!--bd-->
+                                          </div><!--inner-->
+                                      </div><!--modFactAction-->
+
+                                      <!--THIS IS THE OUTCOME SECTION -->
+                                      <div class="mod modBase modOutcome hide" id="answerTea_show">
                                           <div class="inner">
-                                            <div class="hd"></div>
-                                            <div class="bd">
-                                              <p>Purchase Coffee</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                              <div class="hd">
+                                                  <h2 >You Bought Tea</h2>
+                                              </div>
+                                              <div class="bd">
+                                                  <div class="mod modQuestion question">
+                                                      <div class="inner">
+                                                          <div class="bd">
+                                                              <p>It was tasty</p>
+                                                              <h3>What was the question?</h3>
+                                                              <ul>
+                                                                  <li class="answer">a. Answer 1.</li>
+                                                                  <li class="feedback">Dummie</li>
+                                                                  <li class="answer">b. Answer 2.</li>
+                                                                  <li class="feedback correct">You're brillant</li>
+                                                                  <li class="answer">c. Answer 3.</li>
+                                                                  <li class="feedback">Not the next Bill Gates</li>
+                                                              </ul>
+                                                              <p class="next_question">Next Question</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="mod modQuestion question">
+                                                      <div class="inner">
+                                                          <div class="bd">
+                                                              <p>It was tasty</p>
+                                                              <h3>What was the question?</h3>
+                                                              <form>
+                                                                  <textarea></textarea>
 
+                                                              </form>
+                                                              <p class="next_question">Proceed</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="mod modQuestion question">
+                                                      <div class="inner">
+                                                          <div class="bd">
+                                                              <p>It was tasty</p>
+                                                              <h3>What could have happened</h3>
+                                                              <p> This is a paragraph </p>
+                                                              <p class="proceed">Proceed</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div><!--bd-->
+                                          </div><!--inner-->
+                                      </div> <!-- modOutcome -->
 
-
-                                  </div>
-                              	</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                                    </div>
-                                	</div>
-                                </div>
-
-                        <!--THIS IS THE OUTCOME SECTION -->
-                        <div class="mod modBase modOutcome hide" id="answerTea_show">
-                          <div class="inner">
-                            <div class="hd">
-                              <h2 >You Bought Tea</h2>
-                            </div>
-                            <div class="bd">
-
-                              <div class="mod modQuestion question">
-                              	<div class="inner">
-                                  <div class="bd">
-                                    <p>It was tasty</p>
-                                    <h3>What was the question?</h3>
-                                    <ul>
-                                      <li class="answer">a. Answer 1.</li>
-                                      <li class="feedback">Dummie</li>
-                                      <li class="answer">b. Answer 2.</li>
-                                      <li class="feedback correct">You're brillant</li>
-                                      <li class="answer">c. Answer 3.</li>
-                                      <li class="feedback">Not the next Bill Gates</li>
-                                    </ul>
-                                  </div>
-                              	</div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div> <!-- modOutcome -->
-
+                                  </div><!--bd-->
+                              </div><!--inner-->
+                          </div><!--scenario-->
 
 
 
                       </div>
 
 
-                    </div>
                   </div>
-                </div>
               </div>
-            </div>
+          </div>
+      </div>
+  </div>
           </div><!-- line -->
-        </div> <!-- main --> 
-      </div> <!-- body -->
+      </div> <!-- main --> 
+  </div> <!-- body -->
     </div> <!-- page -->
 
-  </body>
+</body>
 </html>
