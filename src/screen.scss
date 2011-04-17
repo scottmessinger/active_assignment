@@ -19,7 +19,11 @@ $accent: #c42817;
 
 
 .hide{
-  //display: none;
+  display: none;
+}
+
+.question{
+  display: none;
 }
 
 .feedback{
@@ -100,6 +104,27 @@ body, p{
   background-color: brown;
   font-size: 150%;
 }
+
+input[type=text]{
+  width: 100%;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+textarea{
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px;
+}
+
+
+
+.nextQuestion {
+  cursor: pointer;
+}
+
+
 .correct{
   background-color: green;
 }

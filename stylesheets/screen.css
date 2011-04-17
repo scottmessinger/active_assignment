@@ -1956,73 +1956,78 @@ TODO: clean up selector structure - too much variation in rule strength
 }
 
 /* line 25, ../src/screen.scss */
+.question {
+  display: none;
+}
+
+/* line 29, ../src/screen.scss */
 .feedback {
   display: none;
 }
 
-/* line 33, ../src/screen.scss */
+/* line 37, ../src/screen.scss */
 .title {
   color: #c42817;
   text-transform: uppercase;
 }
 
-/* line 38, ../src/screen.scss */
+/* line 42, ../src/screen.scss */
 .subtitle {
   color: #c42817;
   text-transform: uppercase;
   font-size: 140%;
 }
 
-/* line 45, ../src/screen.scss */
+/* line 49, ../src/screen.scss */
 h1, .h1 {
   color: #ffdd68;
   text-transform: uppercase;
 }
 
-/* line 50, ../src/screen.scss */
+/* line 54, ../src/screen.scss */
 h2, .h2 {
   color: #ffdd68;
   font-size: 150%;
 }
 
-/* line 56, ../src/screen.scss */
+/* line 60, ../src/screen.scss */
 .section_h2 {
   color: white;
   text-transform: uppercase;
   font-size: 120%;
 }
 
-/* line 62, ../src/screen.scss */
+/* line 66, ../src/screen.scss */
 h3, .h3 {
   color: #ffdd68;
 }
 
-/* line 75, ../src/screen.scss */
+/* line 79, ../src/screen.scss */
 body, p {
   font-size: 13px;
 }
 
-/* line 79, ../src/screen.scss */
+/* line 83, ../src/screen.scss */
 .myLeft {
   background-color: blue;
 }
 
-/* line 83, ../src/screen.scss */
+/* line 87, ../src/screen.scss */
 .modLogo {
   margin-top: 0px;
 }
 
-/* line 88, ../src/screen.scss */
+/* line 92, ../src/screen.scss */
 .answer {
   font-size: 15px;
   padding: 3px 5px;
 }
-/* line 91, ../src/screen.scss */
+/* line 95, ../src/screen.scss */
 .answer:hover {
   background-color: black;
 }
 
-/* line 96, ../src/screen.scss */
+/* line 100, ../src/screen.scss */
 .feedback {
   padding: 10px;
   margin-top: 5px;
@@ -2031,53 +2036,73 @@ body, p {
   font-size: 150%;
 }
 
-/* line 103, ../src/screen.scss */
+/* line 108, ../src/screen.scss */
+input[type=text] {
+  width: 100%;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+/* line 114, ../src/screen.scss */
+textarea {
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px;
+}
+
+/* line 123, ../src/screen.scss */
+.nextQuestion {
+  cursor: pointer;
+}
+
+/* line 128, ../src/screen.scss */
 .correct {
   background-color: green;
 }
 
-/* line 108, ../src/screen.scss */
+/* line 133, ../src/screen.scss */
 .modBase {
   background-color: gray;
   color: #ffdd68;
 }
-/* line 111, ../src/screen.scss */
+/* line 136, ../src/screen.scss */
 .modBase .inner > .hd {
   background-color: black;
   color: white;
 }
-/* line 115, ../src/screen.scss */
+/* line 140, ../src/screen.scss */
 .modBase .inner > .bd {
   background-color: gray;
 }
 
-/* line 121, ../src/screen.scss */
+/* line 146, ../src/screen.scss */
 .modHeader {
   margin-top: 0px;
   margin-left: 0px;
 }
 
-/* line 127, ../src/screen.scss */
+/* line 152, ../src/screen.scss */
 .modMain {
   background-color: #c42817;
 }
 
-/* line 141, ../src/screen.scss */
+/* line 166, ../src/screen.scss */
 .modChoices > .inner > .bd {
   background-color: #c42817;
 }
 
-/* line 147, ../src/screen.scss */
+/* line 172, ../src/screen.scss */
 .modChoice {
   cursor: pointer;
 }
 
-/* line 153, ../src/screen.scss */
+/* line 178, ../src/screen.scss */
 .leftChoice {
   margin-left: 0px;
 }
 
-/* line 157, ../src/screen.scss */
+/* line 182, ../src/screen.scss */
 .rightChoice {
   margin-right: 0px;
 }
