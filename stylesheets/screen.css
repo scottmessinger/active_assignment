@@ -1965,6 +1965,11 @@ TODO: clean up selector structure - too much variation in rule strength
   display: none;
 }
 
+/* line 29, ../src/screen.scss */
+.myPage {
+  width: 760px;
+}
+
 /* line 33, ../src/screen.scss */
 .title {
   color: #c42817;
